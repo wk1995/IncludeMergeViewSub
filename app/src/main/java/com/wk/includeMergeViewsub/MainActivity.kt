@@ -9,6 +9,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListAdapter
 import android.widget.Toast
+import com.wk.includeMergeViewsub.ViewSub.ViewSubActivity
 import com.wk.includeMergeViewsub.include.IncludeIdErrorActivity
 import com.wk.includeMergeViewsub.include.IncludeLayout_Activity
 import com.wk.includeMergeViewsub.include.IncludeSimpleNormalActivity
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity(),AdapterView.OnItemClickListener {
         s.add("Merge:FrameLayout为根节点替换成merge")
         s.add("Merge:include没用merge")
         s.add("Merge:include用merge")
+        s.add("viewSub")
         s
     }
 
@@ -62,6 +64,9 @@ class MainActivity : AppCompatActivity(),AdapterView.OnItemClickListener {
             }
             6->{
                 activityClass= MergeIncludeMergeActivity().javaClass
+            }
+            7->{
+                activityClass= ViewSubActivity().javaClass
             }
         }
         if(activityClass==null) return

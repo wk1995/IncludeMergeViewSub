@@ -22,7 +22,8 @@
         <activity android:name=".merge.MergeFrameLayoutActivity" />
         <activity android:name=".merge.MergeMergeActivity" />
         <activity android:name=".merge.MergeIncludeActivity" />
-        <activity android:name=".merge.MergeIncludeMergeActivity"></activity>
+        <activity android:name=".merge.MergeIncludeMergeActivity" />
+        <activity android:name=".ViewSub.ViewSubActivity"></activity>
     </application>
 
 </manifest>
