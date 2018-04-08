@@ -67,7 +67,7 @@ if (TAG_MERGE.equals(name)) {
         android:layout_height="wrap_content" />
 </FrameLayout>
 ```
-![image](C:/Users/Administrator/Desktop/merge.png)
+![image](https://github.com/wk1995/IncludeMergeViewSub/blob/master/merge.png)
 ```
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
@@ -76,7 +76,7 @@ if (TAG_MERGE.equals(name)) {
         android:layout_height="wrap_content" />
 </merge>
 ```
-![image](C:/Users/Administrator/Desktop/frameLayout1.png)
+![image](https://github.com/wk1995/IncludeMergeViewSub/blob/master/frameLayout1.png)
 我们可以看到，如果使用merge，明显少了一个FrameLayout节点，这也算一个视图优化技巧。
 - 对于第六点：自定义View如果继承LinearLayout，建议让自定义View的布局文件根节点设置成merge，这点需要注意的是由于merge不是View，额外的属性需要通过代码来添加，具体的例子可以查看 https://blog.csdn.net/a740169405/article/details/50473909
 # 3.ViewSub
